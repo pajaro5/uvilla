@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .user-row {
+            margin-bottom: 14px;
+        }
+
+        .user-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .dropdown-user {
+            margin: 13px 0;
+            padding: 5px;
+            height: 100%;
+        }
+
+        .dropdown-user:hover {
+            cursor: pointer;
+        }
+
+        .table-user-information > tbody > tr {
+            border-top: 1px solid rgb(221, 221, 221);
+        }
+
+        .table-user-information > tbody > tr:first-child {
+            border-top: 0;
+        }
+
+
+        .table-user-information > tbody > tr > td {
+            border-top: 0;
+        }
+        .toppad
+        {margin-top:20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <A href="edit.html" >Edit Profile</A>
+                <A href="edit.html" >Logout</A>
+                <br>
+                <p class=" text-info">May 05,2014,03:00 pm </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title">Eduardo Aute</div>
+                </div>
+                <div class="panel-body">
+                    <div class="col-md-2"> 
+                        <img alt="perfil" src="perfil.jpg" width="50%" height="50%">
+                    </div>
+                    <div class="col-md-10">
+                            <table id="tablaPerfil" class="table table-user-information table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>Cédula</td>
+                                            <td>1111111111</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nombre 1</td>
+                                            <td>Yatu</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nombre 2</td>
+                                            <td>Sabes</td>
+                                        </tr>                                                        
+                                        <tr>
+                                            <td>Apellido 1</td>
+                                            <td>Armando</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Apellido 2</td>
+                                            <td>Casas</td>
+                                        </tr>
+                                        <tr>
+                                           <td>Fecha Nacimiento</td>
+                                            <td id="nacimiento_fecha">28/08/2017</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Genero</td>
+                                            <td id="genero_cmb">Pregúntale a tu ñaña</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ubicación</td>
+                                            <td>Culebra larga #33</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dirección domicilio</td>
+                                            <td>Culebra larga #33</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Estado civil</td>
+                                            <td id="estadoCivil_cmb">Disponible</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lugar de nacimiento</td>
+                                            <td>Hospital</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ingresos por mes del grupo familiar</td>
+                                            <td>$555.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tipo de sangre</td>
+                                            <td id="tipoSangre_cmb">0+</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Número de hijos</td>
+                                            <td>0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ocupación</td>
+                                            <td>Estudiante</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nombre Padre</td>
+                                            <td>LDU</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nombre Madre</td>
+                                            <td>Saint Mary</td>
+                                        </tr>                                        
+                                    </tbody>
+                                </table>        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="panel-footer">
+                <div class="row">                    
+                    <span class="pull-right">
+                            <a id="btnEditar" href="#" class="btn btn-primary">Editar información</a> 
+                            <a id="btnGuardar" href="#" class="btn btn-primary">Guardar</a>                        
+                    </span>
+                </div>
+            </div>
+        </div>                    
+    </div>    
+    <script src="profile.js"></script>
+</body>
+</html>
